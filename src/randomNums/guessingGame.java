@@ -136,11 +136,14 @@ public class guessingGame extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // variable declaration
         int firstGuess;
         firstGuess = Integer.parseInt(inputNumber.getText());
         String finalGuess = String.valueOf(firstGuess);
+        
         outputNumber.setText(finalGuess);
         
+        //selection statement
         if (firstGuess < secretNum)
         {
             outputResult.setText("Too low!");
@@ -153,8 +156,9 @@ public class guessingGame extends javax.swing.JFrame {
         {
             outputResult.setText("You got it!");
         }
-        
-        
+        /* this will display either a low, high or exact message in comparison -
+           to the int secretNum
+        */
         
 
         
